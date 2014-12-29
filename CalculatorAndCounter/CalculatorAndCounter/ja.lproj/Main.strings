@@ -1,0 +1,63 @@
+
+/* Class = "IBUILabel"; text = "3分"; ObjectID = "1R3-9q-8vI"; */
+"1R3-9q-8vI.text" = "3分";
+
+/* Class = "IBUILabel"; text = "懐中電灯"; ObjectID = "5Sb-Jr-AJU"; */
+"5Sb-Jr-AJU.text" = "懐中電灯";
+
+/* Class = "IBUILabel"; text = "1000"; ObjectID = "5cD-dR-0NW"; */
+"5cD-dR-0NW.text" = "1000";
+
+/* Class = "IBUILabel"; text = "税込価格 (円)"; ObjectID = "62I-Qc-mAC"; */
+"62I-Qc-mAC.text" = "税込価格 (円)";
+
+/* Class = "IBUILabel"; text = "3333.00"; ObjectID = "90c-I0-4va"; */
+"90c-I0-4va.text" = "3333.00";
+
+/* Class = "IBUILabel"; text = "1000"; ObjectID = "ABz-qm-yH3"; */
+"ABz-qm-yH3.text" = "1000";
+
+/* Class = "IBUIViewController"; title = "First"; ObjectID = "CZ4-MO-1fc"; */
+"CZ4-MO-1fc.title" = "First";
+
+/* Class = "IBUIViewController"; title = "Second"; ObjectID = "QUy-BD-bpt"; */
+"QUy-BD-bpt.title" = "Second";
+
+/* Class = "IBUITabBarItem"; title = "すとっぷうぉっち"; ObjectID = "SiB-aY-Oed"; */
+"SiB-aY-Oed.title" = "すとっぷうぉっち";
+
+/* Class = "IBUITabBarItem"; title = "たいまー"; ObjectID = "XIZ-oo-0Mc"; */
+"XIZ-oo-0Mc.title" = "たいまー";
+
+/* Class = "IBUITabBarItem"; title = "かぞえる"; ObjectID = "Z7h-1E-pvt"; */
+"Z7h-1E-pvt.title" = "かぞえる";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "fxO-2y-6rq"; */
+"fxO-2y-6rq.text" = "Title";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "hcW-bg-PTV"; */
+"hcW-bg-PTV.text" = "Label";
+
+/* Class = "IBUITabBarItem"; title = "らいと"; ObjectID = "lM9-yf-LWR"; */
+"lM9-yf-LWR.title" = "らいと";
+
+/* Class = "IBUILabel"; text = "8分"; ObjectID = "pDp-4d-LYW"; */
+"pDp-4d-LYW.text" = "8分";
+
+/* Class = "IBUILabel"; text = "すとっぷうぉっち"; ObjectID = "sPU-7j-5AQ"; */
+"sPU-7j-5AQ.text" = "すとっぷうぉっち";
+
+/* Class = "IBUILabel"; text = "現在のカウント回数は…？"; ObjectID = "sTn-t6-dwa"; */
+"sTn-t6-dwa.text" = "現在のカウント回数は…？";
+
+/* Class = "IBUITabBarItem"; title = "けいさん"; ObjectID = "u1e-5L-l1D"; */
+"u1e-5L-l1D.title" = "けいさん";
+
+/* Class = "IBUILabel"; text = "6分"; ObjectID = "xH3-Tg-4LI"; */
+"xH3-Tg-4LI.text" = "6分";
+
+/* Class = "IBUILabel"; text = "10分"; ObjectID = "xHM-hT-WD9"; */
+"xHM-hT-WD9.text" = "10分";
+
+/* Class = "IBUILabel"; text = "↓ここに税抜価格を入力して下さい！"; ObjectID = "zbi-Cm-tG1"; */
+"zbi-Cm-tG1.text" = "↓ここに税抜価格を入力して下さい！";
