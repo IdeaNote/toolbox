@@ -3,7 +3,7 @@
 //  CalculatorAndCounter
 //
 //  Created by Junji on 2014/04/17.
-//  Copyright (c) 2014年 Junji Yamamoto. All rights reserved.
+//  Copyright (c) 2014年 IdeaNote. All rights reserved.
 //
 
 #import "ThirdViewController.h"

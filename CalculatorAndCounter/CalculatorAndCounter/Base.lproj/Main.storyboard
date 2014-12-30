@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13A3028" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tvX-cU-hNg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tvX-cU-hNg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--First View Controller - First-->
+        <!--First-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
                 <viewController storyboardIdentifier="FirstViewController" title="First" id="CZ4-MO-1fc" customClass="FirstViewController" sceneMemberID="viewController">
@@ -46,7 +47,7 @@
             </objects>
             <point key="canvasLocation" x="-173" y="-418"/>
         </scene>
-        <!--Second View Controller - Second-->
+        <!--Second-->
         <scene sceneID="ot8-2e-RuS">
             <objects>
                 <viewController storyboardIdentifier="SecondViewController" title="Second" id="QUy-BD-bpt" customClass="SecondViewController" sceneMemberID="viewController">
@@ -54,34 +55,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v7S-FY-kUe">
-                                <rect key="frame" x="77" y="241" width="167" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v7S-FY-kUe">
+                                <rect key="frame" x="77" y="255" width="167" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" backgroundImage="reset_button.jpg">
+                                <state key="normal" image="reset_button.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="resetPush:" destination="QUy-BD-bpt" eventType="touchUpInside" id="3TA-lY-wVn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EpN-HU-cz8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EpN-HU-cz8">
                                 <rect key="frame" x="187" y="328" width="99" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" backgroundImage="plus_button.jpg">
+                                <state key="normal" image="plus_button.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="plusPush:" destination="QUy-BD-bpt" eventType="touchUpInside" id="766-ld-NUf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bSf-Rp-1D5">
-                                <rect key="frame" x="34" y="328" width="99" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" backgroundImage="minus_button.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="minusPush:" destination="QUy-BD-bpt" eventType="touchUpInside" id="IiJ-FO-P57"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ABz-qm-yH3">
@@ -98,6 +89,16 @@
                                 <color key="textColor" red="0.19934869490000001" green="0.60974549020000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bSf-Rp-1D5">
+                                <rect key="frame" x="34" y="328" width="99" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="minus_button.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="minusPush:" destination="QUy-BD-bpt" eventType="touchUpInside" id="IiJ-FO-P57"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -115,7 +116,7 @@
             </objects>
             <point key="canvasLocation" x="175" y="-412"/>
         </scene>
-        <!--Third View Controller - ストップウォッチ-->
+        <!--ストップウォッチ-->
         <scene sceneID="VWi-JM-Of7">
             <objects>
                 <viewController storyboardIdentifier="ThirdViewController" id="JSm-E9-x3L" customClass="ThirdViewController" sceneMemberID="viewController">
@@ -191,7 +192,7 @@
             </objects>
             <point key="canvasLocation" x="-502" y="367"/>
         </scene>
-        <!--Root Table View Controller - 道具箱-->
+        <!--道具箱-->
         <scene sceneID="tDl-Hl-mLW">
             <objects>
                 <tableViewController id="QAh-0I-pYh" customClass="RootTableViewController" sceneMemberID="viewController">
@@ -234,13 +235,14 @@
                         <segue destination="Oyj-nN-ogk" kind="push" identifier="toTimerViewController" id="YJP-ay-X8M"/>
                         <segue destination="iiO-9S-a6Y" kind="push" identifier="TocameraViewcontroller" id="XtE-Zr-KTb"/>
                         <segue destination="eBx-i5-xRQ" kind="push" identifier="ToNowLocationVIew" id="yZi-us-EZM"/>
+                        <segue destination="0V7-u6-bIa" kind="push" identifier="toQRReader" id="779-R7-wNv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0hz-A4-CIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-20" y="367"/>
         </scene>
-        <!--View Controller - 簡易カメラ-->
+        <!--簡易カメラ-->
         <scene sceneID="lzf-dX-8Px">
             <objects>
                 <viewController id="iiO-9S-a6Y" customClass="ViewController" sceneMemberID="viewController">
@@ -287,7 +289,22 @@
             </objects>
             <point key="canvasLocation" x="557" y="835"/>
         </scene>
-        <!--Now Location View Controller - ここの住所-->
+        <!--ReaderVC-->
+        <scene sceneID="uEl-TZ-7yT">
+            <objects>
+                <viewController id="0V7-u6-bIa" customClass="QRReaderVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gen-F8-wC4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Aar-gI-See"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uws-kX-i0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="835"/>
+        </scene>
+        <!--ここの住所-->
         <scene sceneID="wIE-7u-QxN">
             <objects>
                 <viewController id="eBx-i5-xRQ" customClass="NowLocationViewController" sceneMemberID="viewController">
@@ -336,7 +353,7 @@
             </objects>
             <point key="canvasLocation" x="147" y="1123"/>
         </scene>
-        <!--Timer View Controller - 料理タイマー-->
+        <!--料理タイマー-->
         <scene sceneID="kss-Vl-Ipj">
             <objects>
                 <viewController storyboardIdentifier="TimerViewController" id="Oyj-nN-ogk" customClass="TimerViewController" sceneMemberID="viewController">
