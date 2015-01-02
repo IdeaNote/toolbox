@@ -235,7 +235,7 @@
                         <segue destination="Oyj-nN-ogk" kind="push" identifier="toTimerViewController" id="YJP-ay-X8M"/>
                         <segue destination="iiO-9S-a6Y" kind="push" identifier="TocameraViewcontroller" id="XtE-Zr-KTb"/>
                         <segue destination="eBx-i5-xRQ" kind="push" identifier="ToNowLocationVIew" id="yZi-us-EZM"/>
-                        <segue destination="0V7-u6-bIa" kind="push" identifier="toQRReader" id="779-R7-wNv"/>
+                        <segue destination="wVC-i4-Pxm" kind="modal" identifier="toQRReader" id="779-R7-wNv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0hz-A4-CIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -287,11 +287,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMI-rG-JAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="557" y="835"/>
+            <point key="canvasLocation" x="549" y="1123"/>
         </scene>
         <!--ReaderVC-->
         <scene sceneID="uEl-TZ-7yT">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uws-kX-i0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="0V7-u6-bIa" customClass="QRReaderVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gen-F8-wC4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -299,10 +300,59 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Aar-gI-See"/>
+                    <connections>
+                        <segue destination="LQD-g5-LwK" kind="push" identifier="toResultView" id="UoO-FD-9hS"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uws-kX-i0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="920" y="835"/>
+            <point key="canvasLocation" x="1827" y="814"/>
+        </scene>
+        <!--ResultVC-->
+        <scene sceneID="b0V-Ic-cTh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ier-58-5Xc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="LQD-g5-LwK" customClass="QRResultVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nwg-aT-JGS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="読み取り内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Cl-cA-8EH">
+                                <rect key="frame" x="100" y="104" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="3jV-Yx-6BM">
+                                <rect key="frame" x="16" y="160" width="288" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4m9-8q-NQI">
+                                <rect key="frame" x="117" y="351" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.55834494774121701" green="0.67727169011848143" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Safariで開く">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openSafariBtn:" destination="LQD-g5-LwK" eventType="touchUpInside" id="2dW-Fa-0xe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oTf-9U-KT4"/>
+                    <connections>
+                        <outlet property="textView" destination="3jV-Yx-6BM" id="LnB-bw-LRt"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2233" y="814"/>
         </scene>
         <!--ここの住所-->
         <scene sceneID="wIE-7u-QxN">
@@ -540,6 +590,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GIG-kc-20Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="549" y="-412"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w3g-WH-NCF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wVC-i4-Pxm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rqG-9e-IYV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0V7-u6-bIa" kind="relationship" relationship="rootViewController" id="EXX-Vh-cUb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CxY-eX-e8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1295" y="814"/>
         </scene>
     </scenes>
     <resources>

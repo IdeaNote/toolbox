@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B259DEE190631B80069CE7B /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B259DED190631B80069CE7B /* FourthViewController.m */; };
+		3B2ECA6A1A5595A100134516 /* QRResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2ECA691A5595A100134516 /* QRResultVC.m */; };
 		3B300CD9194CB5E200938D10 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B300CD8194CB5E200938D10 /* CoreLocation.framework */; };
 		3B300CDB194CB5E900938D10 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B300CDA194CB5E900938D10 /* MapKit.framework */; };
 		3B300CDE194CB67B00938D10 /* NowLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B300CDD194CB67B00938D10 /* NowLocationViewController.m */; };
@@ -103,6 +104,8 @@
 /* Begin PBXFileReference section */
 		3B259DEC190631B80069CE7B /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		3B259DED190631B80069CE7B /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		3B2ECA681A5595A100134516 /* QRResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRResultVC.h; path = QRReaderVC/QRResultVC.h; sourceTree = "<group>"; };
+		3B2ECA691A5595A100134516 /* QRResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRResultVC.m; path = QRReaderVC/QRResultVC.m; sourceTree = "<group>"; };
 		3B300CD8194CB5E200938D10 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3B300CDA194CB5E900938D10 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3B300CDC194CB67B00938D10 /* NowLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NowLocationViewController.h; path = CalculatorAndCounter/NowLocationViewController.h; sourceTree = "<group>"; };
@@ -286,6 +289,8 @@
 			children = (
 				3BB91BE11A531428006A02F5 /* QRReaderVC.h */,
 				3BB91BE21A531428006A02F5 /* QRReaderVC.m */,
+				3B2ECA681A5595A100134516 /* QRResultVC.h */,
+				3B2ECA691A5595A100134516 /* QRResultVC.m */,
 			);
 			name = QRReaderVC;
 			sourceTree = "<group>";
@@ -630,6 +635,7 @@
 			files = (
 				3B4177821941FF160081317A /* ViewController.m in Sources */,
 				3B259DEE190631B80069CE7B /* FourthViewController.m in Sources */,
+				3B2ECA6A1A5595A100134516 /* QRResultVC.m in Sources */,
 				3BB91BE31A531428006A02F5 /* QRReaderVC.m in Sources */,
 				3BE7151818F7AAA100161123 /* SecondViewController.m in Sources */,
 				3BB510DA1923BBE9009BD309 /* TimerViewController.m in Sources */,

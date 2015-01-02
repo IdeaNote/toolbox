@@ -48,7 +48,7 @@
     NSMutableArray *countTool = [NSMutableArray arrayWithObjects:@"カウンター", nil];
     NSMutableArray *convenienceTool = [NSMutableArray arrayWithObjects:@"懐中電灯", nil];
     NSMutableArray *timerTool = [NSMutableArray arrayWithObjects:@"ストップウォッチ",@"料理タイマー", nil];
-    NSMutableArray *cameraTool = [NSMutableArray arrayWithObjects:@"簡易カメラ", nil];
+    NSMutableArray *cameraTool = [NSMutableArray arrayWithObjects:@"簡易カメラ",@"QRカメラ",nil];
     NSMutableArray *locationTool = [NSMutableArray arrayWithObjects:@"ここの住所", nil];
     
     
@@ -141,7 +141,11 @@
         
     } else if (indexPath.section == 4){
         
-        cell.imageView.image = [UIImage imageNamed:@"iconmonstr-photo-camera-6-icon-32.png"];//トイカメラ
+        if (indexPath.row == 0) {
+            cell.imageView.image = [UIImage imageNamed:@"iconmonstr-photo-camera-6-icon-32.png"];//トイカメラ
+        } else if (indexPath.row == 1){
+            cell.imageView.image = [UIImage imageNamed:@"iconmonstr-photo-camera-6-icon-32.png"];//QRコード
+        }
     
     } else if (indexPath.section == 5){
         
@@ -180,9 +184,14 @@
             [self performSegueWithIdentifier:@"toTimerViewController" sender:self];//キッチンタイマー
         }
     } else if (indexPath.section == 4){
-        
+        if (indexPath.row == 0) {
+            
             [self performSegueWithIdentifier:@"TocameraViewcontroller" sender:self];//トイカメラ
-    
+        } else if (indexPath.row == 1) {
+            
+            [self performSegueWithIdentifier:@"toQRReader" sender:self];//QRコード
+        }
+        
     } else if (indexPath.section == 5){
         
         [self performSegueWithIdentifier:@"ToNowLocationVIew" sender:self];//トイカメラ
